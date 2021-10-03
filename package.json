@@ -1,0 +1,24 @@
+{
+  "name": "nifty-curator-bot",
+  "version": "1.0.0",
+  "description": "Bot that runs the @niftycurator account on Twitter.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashtilawat23/nifty-curator-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashtilawat23/nifty-curator-bot/issues"
+  },
+  "homepage": "https://github.com/ashtilawat23/nifty-curator-bot#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "twitter-api-client": "^1.3.8"
+  }
+}
