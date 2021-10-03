@@ -54,4 +54,5 @@ client.tweets.statusesUpdate({
   },
 ```
 11. Run npm start in your terminal inside the nifty-curator-bot directory. 
+
 ![My first tweet on @niftycurator!](public/first-tweet.png) 
