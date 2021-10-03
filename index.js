@@ -8,10 +8,11 @@ const client = new TwitterClient({
     accessTokenSecret: process.env.ACCESS_TOKEN_SECRET,
 });
 
-client.tweets.statusesUpdate({
-    status: "Testing! 1.. 2.. 3.."
-}).then (res => {
-    console.log("Your Tweet was sent!", res)
-}).catch (err => {
-    console.error(err)
-});
+// Test code to send your first tweet using client.
+// client.tweets.statusesUpdate({
+//     status: "Testing! 1.. 2.. 3.."
+// }).then (res => {
+//     console.log("Your Tweet was sent!", res)
+// }).catch (err => {
+//     console.error(err)
+// });
