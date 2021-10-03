@@ -9,6 +9,7 @@ const client = new TwitterClient({
 });
 
 // Test code to send your first tweet using client.
+
 // client.tweets.statusesUpdate({
 //     status: "Testing! 1.. 2.. 3.."
 // }).then (res => {
