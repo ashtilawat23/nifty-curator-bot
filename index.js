@@ -1,12 +1,17 @@
 require('dotenv').config()
-const {TwitterApi} = require('twitter-api-v2')
+const {TwitterClient} = require('twitter-api-client')
 
-const client = new TwitterApi({
-    appKey: process.env.CONSUMER_API_KEY, 
-    appSecret: process.env.CONSUMER_API_SECRET,
+const client = new TwitterClient({
+    apiKey: process.env.CONSUMER_API_KEY, 
+    apiSecret: process.env.CONSUMER_API_SECRET,
     accessToken: process.env.ACCESS_TOKEN,
-    accessSecret: process.env.ACCESS_TOKEN_SECRET,
+    accessTokenSecret: process.env.ACCESS_TOKEN_SECRET,
 });
-const v1Client = client.v1;
-const v2Client = client.v2;
 
+client.tweets.statusesUpdate({
+    status: "Testing! 1.. 2.. 3.."
+}).then (res => {
+    console.log("Your Tweet was sent!", res)
+}).catch (err => {
+    console.error(err)
+});

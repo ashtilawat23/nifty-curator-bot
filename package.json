@@ -4,14 +4,15 @@
   "description": "Bot that runs the @niftycurator account on Twitter.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ashtilawat23/nifty-curator-bot.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ashalesh Tilawat",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ashtilawat23/nifty-curator-bot/issues"
@@ -19,6 +20,6 @@
   "homepage": "https://github.com/ashtilawat23/nifty-curator-bot#readme",
   "dependencies": {
     "dotenv": "^10.0.0",
-    "twitter-api-v2": "^1.5.2"
+    "twitter-api-client": "^1.3.8"
   }
 }
