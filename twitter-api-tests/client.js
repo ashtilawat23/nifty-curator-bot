@@ -1,8 +1,5 @@
-require('dotenv').config();
-const {TwitterClient} = require('twitter-api-client');
-const axios = require('axios');
-const cheerio = require('cheerio');
-
+require('dotenv').config()
+const {TwitterClient} = require('twitter-api-client')
 
 const client = new TwitterClient({
     apiKey: process.env.CONSUMER_API_KEY, 
@@ -10,4 +7,3 @@ const client = new TwitterClient({
     accessToken: process.env.ACCESS_TOKEN,
     accessTokenSecret: process.env.ACCESS_TOKEN_SECRET,
 });
-
